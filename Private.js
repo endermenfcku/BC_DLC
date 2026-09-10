@@ -1,6 +1,6 @@
 "use strict";
 var PrivateBackground = "Private";
-/** @type {NPCCharacter} testtestes */ 
+/** @type {NPCCharacter} */
 var PrivateVendor = /** @type {never} */ (null);
 /** @type {NPCCharacter[]} */
 var PrivateCharacter = [];
