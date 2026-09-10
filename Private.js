@@ -6,7 +6,7 @@ var PrivateVendor = /** @type {never} */ (null);
 var PrivateCharacter = [];
 var PrivateCharacterOffset = 0;
 var PrivateCharacterShouldSync = false;
-var PrivateCharacterMax = 4;
+var PrivateCharacterMax = 20;
 var PrivateReleaseTimer = 0;
 var PrivateActivity = "";
 var PrivateActivityCount = 0;
@@ -832,7 +832,7 @@ async function PrivateLoad() {
 	}
 
 	Player.ArousalSettings.OrgasmCount = 0;
-
+	PrivateCharacterMax = 20;
 	let MustSync = false;
 	MustSync = PrivateRelationDecay();
 	if (PrivateEntryEvent) MustSync = (MustSync || PrivateRansomStart());
@@ -1367,7 +1367,7 @@ function PrivateGetCage() {
 function PrivateGetExpansion() {
 	CharacterChangeMoney(Player, -200);
 	LogAdd("Expansion", "PrivateRoom");
-	PrivateCharacterMax = 8;
+	PrivateCharacterMax = 20;
 }
 
 /**
@@ -1377,7 +1377,7 @@ function PrivateGetExpansion() {
 function PrivateGetSecondExpansion() {
 	CharacterChangeMoney(Player, -400);
 	LogAdd("SecondExpansion", "PrivateRoom");
-	PrivateCharacterMax = 12;
+	PrivateCharacterMax = 20;
 }
 
 /**
